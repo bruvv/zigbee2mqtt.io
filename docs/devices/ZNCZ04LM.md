@@ -17,6 +17,8 @@ description: "Integrate your Xiaomi ZNCZ04LM via Zigbee2MQTT with whatever smart
 
 ## Notes
 
+### Pairing
+Insert the plug into a wall out let and hold the powerbutton (about 5 seconds) until the led on top shows red and then blue. 
 
 ### Power outage memory
 This option allows the device to restore the last on/off state when it's reconnected to power.
