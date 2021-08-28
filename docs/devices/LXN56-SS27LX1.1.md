@@ -1,24 +1,26 @@
 ---
-title: "Schneider Electric CCT5011-0001/MEG5011-0001 control via MQTT"
-description: "Integrate your Schneider Electric CCT5011-0001/MEG5011-0001 via Zigbee2MQTT with whatever smart home
+title: "Zemismart LXN56-SS27LX1.1 control via MQTT"
+description: "Integrate your Zemismart LXN56-SS27LX1.1 via Zigbee2MQTT with whatever smart home
  infrastructure you are using without the vendors bridge or gateway."
 ---
 
 *To contribute to this page, edit the following
-[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docs/devices/CCT5011-0001_MEG5011-0001.md)*
+[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docs/devices/LXN56-SS27LX1.1.md)*
 
-# Schneider Electric CCT5011-0001/MEG5011-0001
+# Zemismart LXN56-SS27LX1.1
 
-| Model | CCT5011-0001/MEG5011-0001  |
-| Vendor  | Schneider Electric  |
-| Description | Micro module switch |
+| Model | LXN56-SS27LX1.1  |
+| Vendor  | Zemismart  |
+| Description | Smart light switch - 2 gang with neutral wire |
 | Exposes | switch (state), linkquality |
-| Picture | ![Schneider Electric CCT5011-0001/MEG5011-0001](../images/devices/CCT5011-0001-MEG5011-0001.jpg) |
-| White-label | Elko EKO07144 |
+| Picture | ![Zemismart LXN56-SS27LX1.1](../images/devices/LXN56-SS27LX1.1.jpg) |
 
 ## Notes
 
-None
+
+## 2 distinct devices
+This switch was 2 distinct Zigbee chips, so it's seen as 2 separate devices.
+
 
 
 ## Exposes
@@ -57,7 +59,9 @@ sensor:
     availability_topic: "zigbee2mqtt/bridge/state"
     value_template: "{{ value_json.linkquality }}"
     unit_of_measurement: "lqi"
+    enabled_by_default: false
     icon: "mdi:signal"
+    state_class: "measurement"
 ```
 {% endraw %}
 

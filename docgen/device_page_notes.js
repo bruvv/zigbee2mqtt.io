@@ -1,5 +1,202 @@
 const notes = [
     {
+        model: ['VOCKQJK11LM'],
+        note: `
+### Pairing
+Press and hold button on top of device until connection symbol appears
+`,
+    },
+    {
+        model: ['HG06463A'],
+        note: `
+### Pairing
+Factory reset the light bulb. After resetting the bulb will automatically connect.
+
+Factory reset the light bulb.
+After resetting the bulb will automatically connect.
+
+One option that might work is to use (very) short “on’s” and a little bit longer “off’s”, where you kill the light as soon as the bulb shows signs of turning on.
+Start with bulb on, then off, and then 3 “on’s”, wait in the 3rd ON state.
+Alternatively, start with the bulb on, and then repeat the off on sequence as above, but wait 2-3 seconds in each state (on and off).
+When in pairing state, the bulb will flash.
+`,
+    },
+    {
+        model: ['AV2010/22'],
+        note: `
+## Pairing
+Pair the Bitron AV2010/22 sensor to Zigbee2MQTT by holding it close to the coordinator and pressing the indicator light/button at the front for about 10 seconds. The indicator light/button will flash red once to indicate it is in pairing mode. The Bitron AV2010/22 sensor should now be visible in the Zigbee2MQTT Devices overview.
+`,
+    },
+    {
+        model: ['IM6001-MTP01'],
+        note: `
+### Pairing
+
+Hold down reset button (behind the device) about 5 seconds, release once light front of device will starts to blink ([youtube](https://www.youtube.com/watch?v=4useLYFLJiw)).
+`,
+    },
+    {
+        model: ['IM6001-WLP01'],
+        note: `
+### Pairing
+
+Hold down reset button (behind the device) for about 5 seconds, release button when led starts to blink ([youtube](https://www.youtube.com/watch?v=PgswcrEw-YE)).
+`,
+    },
+    {
+        model: ['TS0503B'],
+        note: `
+### Pairing
+
+Long press the button on the device for about 5 seconds, wait few seconds until lights turn on ([offical docs](https://support.tuya.com/en/help/_detail/K9mch3ca38pvz)).
+`,
+    },
+    {
+        model: ['E2001/E2002'],
+        note: `
+### Pairing
+
+Pair the switch to Zigbee2MQTT by pressing the pair button (found under the back cover next to the battery) 4 times in a row. The red light on the side should flash a few times and then turn off. After a few seconds it turns back on and pulsate. When connected, the light turns off.
+`,
+    },
+    {
+        model: ['AV2010/34'],
+        note: `
+## Troubleshooting
+
+### Not receiving any actions
+
+In order to receive the \`recall_*\` action events, the device must be added to a group. There does not need to be any other members of the group.
+To do this read the [groups documentation](/information/groups.html).
+`,
+    },
+    {
+        model: ['929002240401'],
+        note: `
+### Pairing
+
+Hold down power button (side of the switch) about 10 seconds, release once it blinks and then turns green.
+`,
+    },
+    {
+        model: ['902010/128'],
+        note: `
+## Pairing
+Pair the Bitron 902010/128 Smart Plug to Zigbee2MQTT by plugging it into a power outlet close to the coordinator and pressing the indicator light/button at the front for about 10 seconds. The indicator light/button will flash red once to indicate it is in pairing mode. The Bitron 902010/128 Smart Plug now be visible in the Zigbee2MQTT Devices overview.
+`,
+    },
+    {
+        model: ['902010/24'],
+        note: `
+## Pairing
+Pair the Bitron 902010/24 Smoke Detector to Zigbee2MQTT by holding it close to the coordinator and pressing the button for about 10 seconds. The indicator light will flash red once and/or the alarm will beep twice to indicate it is in pairing mode. The Bitron 902010/24 Smoke Detector should now be visible in the Zigbee2MQTT Devices overview.
+`,
+    },
+    {
+        model: ['902010/23'],
+        note: `
+## Pairing
+Pair the Bitron 902010/23 control to Zigbee2MQTT by holding it close to the coordinator and pressing the third button (calculated from the key chain hole) for about 10 seconds. The indicator light will flash red once to indicate it is in pairing mode. The Bitron 902010/23 control should now be visible in the Zigbee2MQTT Devices overview.
+`,
+    },
+    {
+        model: ['44435'],
+        note: `
+### Pairing
+
+* Put the Zigbee coordinator in join mode
+* Turn on the LED strip
+* Turn it off and on within 2 seconds
+* Now turn it off and on 4 more times
+
+On the last turn on operation, the lights will blink 4 times to indicate that the LED strip has been reset and will start the pairing process.
+`,
+    },
+    {
+        model: ['LXN56-SS27LX1.1'],
+        note: `
+## 2 distinct devices
+This switch was 2 distinct Zigbee chips, so it's seen as 2 separate devices.
+`,
+    },
+    {
+        model: ['R7049'],
+        note: `
+### Pairing
+Hold the Test button pressed for 5 seconds (until the red LED blinks).
+After this the device will reset and try to join a network.
+`,
+    },
+    {
+        model: ['3RSS009Z'],
+        note: `
+### Pairing
+To put the device in pairing mode, hold the switch's button for 30 seconds until LED starts blinking fast (2 blinks per second)
+
+### Swap ON/OFF
+To reverse the On/Off direction of the switch, hold the button for more than 10 seconds until the LED turns on and then release
+`,
+    },
+    {
+        model: ['S31ZB'],
+        note: `
+### Pairing
+After first power on, it should enter pairing mode. To pair to a new network, long press reset button for 5s until the Wi-Fi LED indicator changes to a cycle of two short flashes and one long flash, then release.
+`,
+    },
+    {
+        model: ['LS12128'],
+        note: `
+## Pairing/runtime calibration
+1. Open shutter completely
+1. Make sure none of the physical button of the corresponding wall switch is left pressed down
+1. Press the LUPUS relay connection button 3-10s
+1. LED will start to blink
+1. At a certain point the LS12128 will reconnect to the zigbee coordinator (you hear a "click") but it will still blink = it expects to learn closing time and opening time
+1. Press down button
+1. Just when the shutter is fully closed press "up" button (sometimes twice necessary).
+1. Just when the shutter is fully opened press "down" button (or release up button)
+1. Relay will now have learned how long it takes to travel top-bottom and vice-et-versa (youhear a "click" telling relay circuit is open)
+`,
+    },
+    {
+        model: ['EER42000', 'EER50000', 'EER51000', 'EER53000'],
+        note: `
+### Pairing
+This device by default only pairs to Wiser Gateways when the set button is pressed, to let it join normal HA gateways (like what Zigbee2MQTT uses) hold the set button down for 5 seconds, and release.
+`,
+    },
+    {
+        model: ['EER40030'],
+        note: `
+### Channels
+Due to limitations on this devices firmware, it will only join to zigbee networks on channels 11, 15, 20 and 25.
+`,
+    },
+    {
+        model: ['A6121'],
+        note: `
+### Remote unlock
+Be aware that this smart does not offer remote unlock. Users will need the special keys it provides. You can then disable access for these keys, but this requires the app. In essence Zigbee2MQTT only provides the ability to know when a key was inserted.
+`,
+    },
+    {
+        model: ['14148906L'],
+        note: `
+### Binding
+To reset the moodlight, turn it on. Then follow the following pattern:
+* off 1 sec
+* on 1 sec
+* off 1 sec
+* on 1 sec
+* off 1 sec
+* on
+
+The moodlight should now be reset and turned to pairing mode. It should start blinking to indicate this.
+`,
+    },
+    {
         model: ['0402946'],
         note: `
 ### Pairing
@@ -632,7 +829,9 @@ Press and hold the button on the device for more then 10 seconds (until the led 
         model: ['ZNCLDJ11LM'],
         note: `
 ### Pairing
-Hold button for a few seconds until red light turn on.
+Hold button for about 5 seconds until blue light turn on.
+
+If you need to reset device first, hold button longer until red light turn on.
 `,
     },
     {
@@ -1137,7 +1336,7 @@ Request:
 \`\`\`json
 {
     "create": {
-        "model_type": 55,
+        "model_type": 55
     }
 }
 \`\`\`
@@ -1150,7 +1349,7 @@ Response:
     "action": "create",
     "action_result": "success",
     "action_model_type": 55,
-    "action_id": 1,
+    "action_id": 1
 }
 \`\`\`
 
@@ -1167,7 +1366,7 @@ Request:
 {
     "learn": {
         "id": 1,
-        "key_code": 31,
+        "key_code": 31
     }
 }
 \`\`\`
@@ -1183,7 +1382,7 @@ Response:
     "action": "learn",
     "action_result": "success",
     "action_key_code": 1,
-    "action_id": 1,
+    "action_id": 1
 }
 \`\`\`
 
@@ -1200,7 +1399,7 @@ Request:
 {
     "send_key": {
         "id": 1,
-        "key_code": 1,
+        "key_code": 1
     }
 }
 \`\`\`
@@ -1307,6 +1506,7 @@ After that pair the blind by holding the blind battery lid very close to the TRA
 
 ### End Position
 The roller blind maximum extension can be set by moving the blind to the desired position and then double pressing the up or down button.
+To reset the end position so you can define a newer more extended end position, open the blind fully. Then double press the up or down button. You can now set the blind extension again.
 `,
     },
     {
@@ -1726,7 +1926,6 @@ by removing it from the bridge via the Hue app. Orphaned bulbs (configured to co
 
 #### Hue dimmer switch
 With [one](324131092621) of the [two](929002398602) Hue Dimmer switches it is possible to put the bulbs into a factory reset.
-With [one](324131092621) of the [two](929002398602) Hue Dimmer switches it's possible to put the bulbs into a factory reset.
 
 1. Power-supply the bulb
 2. Bring the dimmer switch next to the bulb, as close as possible
@@ -1953,8 +2152,10 @@ If you want to [bind](../information/binding.md) this remote directly to a group
 Factory reset the light bulb.
 After resetting the bulb will automatically connect.
 
-What works is to use (very) short “on’s” and a little bit longer “off’s”, where you kill the light as soon as the bulb shows signs of turning on.
+One option that might work is to use (very) short “on’s” and a little bit longer “off’s”, where you kill the light as soon as the bulb shows signs of turning on.
 Start with bulb on, then off, and then 3 “on’s”, wait in the 3rd ON state.
+Alternatively, start with the bulb on, and then repeat the off on sequence as above, but wait 2-3 seconds in each state (on and off).
+When in pairing state, the bulb will flash.
 `,
     },
     {
@@ -2966,7 +3167,7 @@ Reset by unplugging any devices plugged into the socket, hold the button down fo
         model: ['SJCGQ11LM', 'SJCGQ12LM'],
         note: `
 ### Pairing
-Press and hold water logo on the device for +- 10 seconds (you have to press quite hard) until the blue light blinks
+Press and hold water logo on the device for +- 5 seconds (you have to press quite hard) until the blue light blinks
 three times, release the water logo (the blue light will blink once more) and wait.
     `,
     },
@@ -2992,49 +3193,6 @@ Where:
     "beep": 5
 }
 \`\`\`
-`,
-    },
-    {
-        model: ['QBKG03LM', 'QBKG04LM', 'QBKG12LM', 'QBKG11LM', 'QBKG21LM', 'QBKG22LM', 'QBKG25LM', 'QBKG24LM', 'QBKG26LM', 'QBKG23LM'],
-        note: `
-### Decoupled mode
-Decoupled mode allows to turn wired switch into wireless button with separately controlled relay.
-This might be useful to assign some custom actions to buttons and control relay remotely.
-This command also allows to redefine which button controls which relay for the double switch (not supported for QBKG25LM).
-
-Topic \`zigbee2mqtt/FRIENDLY_NAME/system/set\` should be used to modify operation mode.
-
-**NOTE:** For QBKG25LM instead of \`system\` use \`left\`, \`center\` or \`right\` and leave out the \`button\` property in the payload.
-
-Payload:
-\`\`\`js
-{
-  "operation_mode": {
-    "button": "single"|"left"|"right", // Always use single for a single switch
-    "state": "VALUE"
-  }
-}
-\`\`\`
-
-Values                | Description
-----------------------|---------------------------------------------------------
-\`control_relay\`       | Button directly controls relay (for single switch and QBKG25LM)
-\`control_left_relay\`  | Button directly controls left relay (for double switch, not supported for QBKG25LM)
-\`control_right_relay\` | Button directly controls right relay (for double switch, not supported for QBKG25LM)
-\`decoupled\`           | Button doesn't control any relay
-
-\`zigbee2mqtt/FRIENDLY_NAME/system/get\` to read current mode.
-
-Payload:
-\`\`\`js
-{
-  "operation_mode": {
-    "button": "single"|"left"|"right" // Always use single for a single switch
-  }
-}
-\`\`\`
-
-Response will be sent to \`zigbee2mqtt/FRIENDLY_NAME\`, example: \`{"operation_mode_right":"control_right_relay"}\`
 `,
     },
     {
@@ -3510,17 +3668,21 @@ functionality this can be passed along to Home Assistant by disabling some of th
 for example:
 \`\`\`yaml
 '0x001fee0000001234':
-    friendly_name: cover_not_supporting_tilt'
+    friendly_name: cover_not_supporting_tilt
     homeassistant:
-      tilt_command_topic: null
-      tilt_status_topic: null
+        tilt_command_topic: null
+        tilt_status_topic: null
+        tilt_status_template: null
 '0x001fee0000001234':
-    friendly_name: cover_supporting_neither_lift_nor_tilt'
+    friendly_name: cover_supporting_neither_lift_nor_tilt
     homeassistant:
-    set_position_topic: null
-    position_topic: null
-      tilt_command_topic: null
-      tilt_status_topic: null
+        set_position_topic: null
+        set_position_template: null
+        position_topic: null
+        position_template: null
+        tilt_command_topic: null
+        tilt_status_topic: null
+        tilt_status_template: null
 \`\`\`
 `,
     },
@@ -4194,6 +4356,13 @@ Press the pairing button on the PCB for 5-10 seconds until the yellow
 indicator light flashes, then release it.
 While pairing, keep the remote close to the coordinator.
 `,
+    },
+    {
+        model: ['GR-ZB01-W'],
+        note: `
+### AC Power
+If you are using the AC wall adapter, the battery level will always stay within the range of 25-35% as it is continually drawing power from the outlet.
+The battery level indicator is only relevant to if you are using the solar panel.`,
     },
 ];
 
